@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap" rel="stylesheet">
+  <style>
+    * {padding: 0; margin: 0; box-sizing: border-box;
+      font-family: 'Nanum Gothic', sans-serif;}
+    body {float: left; width: 800px; margin: 0 auto;}
+    header h1, nav p {
+      display: flex; justify-content: center; align-items: center; border: 1px solid red;
+    }
+    header h1 {padding-top: 5px; padding-bottom: 5px; margin-top: 10px; margin-bottom: 10px;
+              display: inline-block; width: 800px;}
+    header {text-align: center; letter-spacing: 1.5em;}
+    nav p {padding-top: 15px; padding-bottom: 15px; margin: 0; display: inline-block; width: 800px;}
+    nav {text-align: center; margin-bottom: 10px;}
+    #main {display: flex; background-color: lightgray;}
+    #main section {background-color: white; width: 600px; min-height: 600px;}
+    #main aside {width: 100px; background-color: lightseagreen; height: 200px;}
+    #main aside, #main section {float: left;}
+    section p {margin-top: 0;}
+    footer {display: flex; justify-content: center; align-items: center; border: 1px solid red;
+            padding-top: 10px; padding-bottom: 10px; margin-top: 10px;}
+  </style>
+</head>
+<body>
+  <header><h1>ICIA Web Board</h1></header>
+  <nav><p>메뉴 영역입니다.</p></nav>
+  <main id="main">
+    <aside></aside>
+    <section><p>여기는 본문 영역입니다.</p></section>
+    <aside></aside>
+  </main>
+  <footer>copyright &copy;2023 All Right Reserved</footer>
+</body>
+</html>

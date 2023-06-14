@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* float 을 사용 (float: left;)하면 반드시 clear (overflow: hidden;)해야 한다. */
+    main {width: 800px; overflow: hidden;}
+    aside {height: 600px; width: 100px; background-color: lightgray;}
+    #main1 aside, #main1 section {
+      float: left;
+    }
+    #main1 section {width: 600px; min-height: 600px; background-color: lightcyan;}
+  </style>
+</head>
+<body>
+  <main id="main1">
+    <aside></aside>
+    <section></section>
+    <aside></aside>
+  </main>
+</body>
+</html>
